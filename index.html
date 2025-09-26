@@ -96,6 +96,27 @@
             </iframe>
         </li>
     </ul>
+    <h2>Listen to this Songs:</h2>  
+  <audio controls>
+    <source src="./Media/song.mp3" type="audio/ogg">
+    your browser does not support mp3
+  </audio>
+
+  <h2>Watch this video:</h2>  
+  <video width="500" controls>
+    <source src="./Media/308mph - Yangwang U9 Xtreme.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h2>My Favorite Place :</h2>  
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826264.9582140707!2d36.07349896319664!3d33.5102191587554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f18169f04d3d5%3A0x47b0b9f4a872e1e8!2sDamascus%2C%20Syria!5e0!3m2!1sen!2sus!4v1695736500000!5m2!1sen!2sus"
+    width="600"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
 </section>
 
 
@@ -103,7 +124,7 @@
 
          <section id="Schedule">
             <h2>My Weekly Schedule</h2>
-            <table border="12" cellpadding="50">
+            <table border="1" cellpadding="10">
                 <tr>
                     <th>Day</th>
                     <th>Activity</th>
@@ -127,9 +148,16 @@
          <!-- contact -->
 
          <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email:hirure07@gmail.com</p>
-            <p>Nummper:0736944577</p>
+            <h2>Contact Me</h2>    
+            <form onsubmit="showMessage(event)">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="number">Number:</label><br>
+                <input type="tel" id="number" name="number" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="30" required></textarea><br><br>
+                <button type="submit">Send</button>                   
+                
          </section>
  
 
